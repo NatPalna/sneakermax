@@ -1,0 +1,122 @@
+.cart_container {
+  width: 580px;
+  min-height: calc(100vh - 149px);
+  padding: 40px;
+}
+
+.cart_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.cart_title {
+  margin-bottom: 0;
+  font-family: var(--font-cursive-bold);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--text-color-dark);
+}
+
+.cart_id {
+  margin-bottom: 0;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  color: var(--text-color-grey);
+}
+
+.cart_content {
+  padding: 30px;
+  margin-bottom: 40px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.cart_text {
+  margin-bottom: 20px;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color-grey);
+}
+
+.cart_text span {
+  font-family: var(--font-cursive-bold);
+  color: var(--text-color-dark);
+}
+
+.cart_items {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 80px;
+}
+
+.cart_img {
+  width: 80px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.cart_item_text {
+  width: calc(100% - 100px);
+}
+
+.cart_item_title {
+  margin-bottom: 10px;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color-dark);
+}
+
+.cart_item_price {
+  margin-bottom: 0;
+  font-family: var(--font-cursive-bold);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-color-dark);
+}
+
+.cart_item_trash {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  color: var(--text-color-grey);
+  background-color: transparent;
+}
+
+.cart_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 20px;
+  background-color: #f6f6f6;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color-dark);
+}
+
+.input::placeholder {
+  color: var(--text-color-grey);
+}

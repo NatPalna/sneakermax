@@ -1,0 +1,139 @@
+.container {
+  display: grid;
+  grid-template-columns: 538px 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  padding: 42px 63px;
+}
+
+.product_img {
+  grid-area: 1 / 1 / 5 / 2;
+  margin-bottom: 60px;
+  width: 538px;
+  height: 565px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.product_title {
+  grid-area: 1 / 2 / 2 / 3;
+  height: fit-content;
+}
+
+.product_info {
+  grid-area: 2 / 2 / 5 / 3;
+}
+
+.product_description {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.product_characteristics {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.title_info {
+  display: flex;
+  gap: 51px;
+  margin-bottom: 38px;
+}
+
+.vendorcode,
+.instock_wrapper {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color-grey);
+}
+
+.instock {
+  color: var(--text-color-dark);
+}
+
+.subtitle {
+  margin-bottom: 25px;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--text-color-dark);
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.product_size {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color-dark);
+}
+
+.size_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 23px;
+  margin-bottom: 60px;
+}
+
+.size {
+  background-color: transparent;
+  border: 1px solid var(--text-color-grey);
+  border-radius: 4px;
+  padding: 10px 26px;
+}
+
+.size:hover,
+.size:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.product_price {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.actual_price {
+  font-family: var(--font-cursive-bold);
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--text-color-dark);
+}
+
+.old_price {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color-grey);
+}
+
+.product_delivery {
+  padding-inline-start: 20px;
+}
+
+.delivery_item {
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color-grey);
+  list-style-image: url("../../assets/img/marker.svg");
+}
+
+.product_description,
+.character {
+  padding-right: 30px;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text-color-dark);
+}

@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1224px) {
+  .nav {
+    gap: 10px;
+  }
+
+  .nav__link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+  }
+}

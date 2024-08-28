@@ -1,0 +1,21 @@
+.buttonR {
+  width: 80px;
+  height: 80px;
+  background-color: var(--button-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttonR:hover {
+  background-color: var(--button-color-hover);
+}
+
+.view {
+  background-image: url("../../assets/img/btnView.svg");
+}
+
+.toCart {
+  background-image: url("../../assets/img/btnToCart.svg");
+}

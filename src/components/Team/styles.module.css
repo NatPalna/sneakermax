@@ -1,0 +1,19 @@
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section_team {
+  position: relative;
+  z-index: 1;
+}
+
+.abstract {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}

@@ -1,0 +1,143 @@
+.section {
+  padding: 60px 0;
+  background-color: #f3f6f6;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.l_col {
+  width: 500px;
+}
+
+.office,
+.sales {
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.title {
+  display: flex;
+  margin-bottom: 20px;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-color-grey);
+}
+
+.tooltip_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--text-color-light);
+  box-shadow: 2px 4px 10px 0 rgba(0, 13, 84, 0.2);
+  position: relative;
+}
+
+.tooltip_text {
+  padding: 10px 20px;
+  width: 426px;
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: -11px;
+  background-color: var(--text-color-light);
+  border-radius: 4px;
+  box-shadow: 4px 8px 20px 0 rgba(0, 13, 84, 0.2);
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--text-color-dark);
+  text-transform: none;
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.ellipse {
+  /* filter: drop-shadow(4px 8px 20px 0 rgba(0, 13, 84, 0.2)); */
+  width: 31px;
+  height: 8px;
+  object-fit: cover;
+  object-position: bottom;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: -6px;
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.tooltip_wrapper:hover .tooltip_text,
+.tooltip_wrapper:hover .ellipse {
+  opacity: 1;
+}
+
+.phone {
+  margin-bottom: 10px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140%;
+  color: var(--text-color-dark);
+}
+
+.address {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--text-color-dark);
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.r_col {
+  width: calc(100% - 500px);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .l_col {
+    width: 100%;
+  }
+
+  .tooltip_text {
+    width: 300px;
+  }
+
+  .r_col {
+    width: 100%;
+  }
+
+  .map {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tooltip_text {
+    width: 220px;
+  }
+}

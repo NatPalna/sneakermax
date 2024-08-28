@@ -1,0 +1,221 @@
+@font-face {
+  font-family: IntroR;
+  src: url("./assets/fonts/Intro-Trial-Rg.woff2") format("woff2"),
+    url("./assets/fonts/Intro-Trial-Rg.woff") format("woff");
+}
+
+@font-face {
+  font-family: IntroB;
+  src: url("./assets/fonts/Intro-Trial-Bd.woff2") format("woff2"),
+    url("./assets/fonts/Intro-Trial-Bd.woff") format("woff");
+}
+
+@font-face {
+  font-family: IntroC;
+  src: url("./assets/fonts/Intro-Trial-RgAlt.woff") format("woff2"),
+    url("./assets/fonts/Intro-Trial-RgAlt.ttf") format("woff");
+}
+
+@font-face {
+  font-family: IntroCB;
+  src: url("./assets/fonts/Intro-Trial-BdAlt.ttf") format("woff2"),
+    url("./assets/fonts/Intro-Trial-BdAlt.ttf") format("woff");
+}
+
+#root {
+  width: 100vw;
+  --bg-main-color: #484283;
+  --bg-secondary-color: #fff4ee;
+  --border-color: #dbbba9;
+  --border-color-dark: #242424;
+  --accent-color: #f14f4f;
+  --accent-color-hover: #cc4949;
+  --accent-color-active: #8c2828;
+  --button-color: #444b58;
+  --button-color-hover: #31343c;
+  --text-color-light: #fff;
+  --text-color-grey: #b2b5bb;
+  --text-color-dark: #444b58;
+  --small-text: #dbbba9;
+  --font-text: IntroR, sans-serif;
+  --font-title: IntroB, sans-serif;
+  --font-cursive: IntroC, sans-serif;
+  --font-cursive-bold: IntroCB, sans-serif;
+}
+
+.accordion {
+  max-width: 880px;
+}
+
+.accordion-button {
+  padding: 0 0 17px 0 !important;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color-dark);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: inherit !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  margin-left: 5px !important;
+  width: 8px !important;
+  height: 8px !important;
+  background-size: contain !important;
+}
+
+.accordion-body {
+  padding: 0 !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none !important;
+}
+
+.container {
+  max-width: 1180px !important;
+  margin: 0 auto;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+h3 {
+  margin: 0;
+}
+
+.modal {
+  padding: 0 !important;
+}
+
+.modal-dialog {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  max-width: 1180px !important;
+}
+
+.modal-content {
+  position: absolute !important;
+  top: 64px;
+  right: 0;
+  width: 480px !important;
+  height: 414px !important;
+  border-radius: 0 !important;
+}
+
+.modal-body {
+  padding: 0 !important;
+}
+
+p {
+  margin: 0;
+}
+
+.panel {
+  padding: 0;
+  border-bottom: 1px solid var(--border-color-dark);
+  font-family: var(--font-text);
+  font-weight: 400;
+}
+
+.panel:first-child {
+  border-top: 1px solid var(--border-color-dark);
+}
+
+.panel[aria-expanded="true"] img {
+  transform: rotate(45deg);
+}
+
+.panel__head {
+  width: 100%;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-family: var(--font-cursive-bold);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.title__white {
+  color: var(--text-color-light);
+}
+
+.title__grey {
+  color: var(--text-color-dark);
+}
+
+.violet_section {
+  background-color: var(--bg-main-color);
+}
+
+.white_section {
+  background-color: var(--bg-secondary-color);
+}
+
+/* nouislider */
+.noUi-target {
+  background-color: #b2b5bb !important;
+  border-color: var(--bg-secondary-color) !important;
+  box-shadow: none !important;
+}
+
+.noUi-horizontal {
+  height: 4px !important;
+}
+
+.noUi-connect {
+  background-color: var(--button-color) !important;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 5px !important;
+  height: 20px !important;
+  top: -9px !important;
+  border-color: var(--bg-secondary-color) !important;
+  background-color: var(--button-color) !important;
+  box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle:first-child {
+  right: -2px !important;
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+  display: none !important;
+}
+
+@media screen and (max-width: 1224px) {
+  .container {
+    max-width: 768px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 480px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 360px !important;
+  }
+}

@@ -1,0 +1,30 @@
+.container {
+  padding: 60px 0;
+  color: var(--text-color-dark);
+}
+
+.title {
+  margin: 0 0 40px;
+  font-family: var(--font-text-bold);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.inner {
+  display: flex;
+  gap: 20px;
+}
+
+.catalog_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+  }
+}
